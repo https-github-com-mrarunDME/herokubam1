@@ -73,7 +73,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # DON'T CHANGE //  CRASH
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    b64decode("aHR0cHM6Ly9naXRodWIuY29tL21yYXJ1bkRNRS9oZXJva3ViYW0=").decode("utf-8"),
+    b64decode("aHR0cHM6Ly9naXRodWIuY29tL21yYXJ1bkRNRS9oZXJva3ViYW0x=").decode("utf-8"),
 )
 UPSTREAM_BRANCH = getenv(
     "UPSTREAM_BRANCH",
