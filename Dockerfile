@@ -13,9 +13,9 @@ RUN pip3 install --upgrade pip setuptools
 RUN if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi 
 RUN if [ ! -e /usr/bin/python ]; then ln -sf /usr/bin/python3 /usr/bin/python; fi 
 RUN rm -r /root/.cache
-RUN git clone -b dev https://github.com/mrarunDME/herokubam/root/herokubam
-RUN mkdir /root/herokubam/bin/
-WORKDIR /root/herokubam/
+RUN git clone -b dev https://github.com/mrarunDME/herokubam1/root/herokubam
+RUN mkdir /root/herokubam1/bin/
+WORKDIR /root/herokubam1/
 RUN chmod +x /usr/local/bin/*
 
 # YNTKTS LMAO :) 
@@ -24,8 +24,8 @@ WORKDIR /app/
 RUN chmod 777 /app/
 
 # install requirements 
-RUN python3 -m pip install -U -r https://raw.githubusercontent.com/mrarunDME/herokubam/dev/requirements.txt
-RUN python3 -m pip install --no-cache-dir -r https://raw.githubusercontent.com/mrarunDME/herokubam/dev/resources/startup/optional-requirements.txt
+RUN python3 -m pip install -U -r https://raw.githubusercontent.com/mrarunDME/herokubam1/dev/requirements.txt
+RUN python3 -m pip install --no-cache-dir -r https://raw.githubusercontent.com/mrarunDME/herokubam1/dev/resources/startup/optional-requirements.txt
 
 # final run 
 CMD ["bash", "startup.sh"]
