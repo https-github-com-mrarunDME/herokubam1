@@ -14,8 +14,8 @@ RUN if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi
 RUN if [ ! -e /usr/bin/python ]; then ln -sf /usr/bin/python3 /usr/bin/python; fi 
 RUN rm -r /root/.cache
 RUN git clone -b dev https://github.com/https-github-com-mrarunDME/herokubam1
-RUN mkdir /root/herokubam1/bin/
-WORKDIR /root/herokubam1/
+RUN mkdir /root/https-github-com-mrarunDME/bin/
+WORKDIR /root/https-github-com-mrarunDME/
 RUN chmod +x /usr/local/bin/*
 
 # YNTKTS LMAO :) 
