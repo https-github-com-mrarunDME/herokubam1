@@ -13,7 +13,7 @@ RUN pip3 install --upgrade pip setuptools
 RUN if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi 
 RUN if [ ! -e /usr/bin/python ]; then ln -sf /usr/bin/python3 /usr/bin/python; fi 
 RUN rm -r /root/.cache
-RUN git clone -b dev https://github.com/mrarunDME/herokubam1/root/herokubam
+RUN git clone -b dev https://github.com/mrarunDME/herokubam1/root/herokubam1
 RUN mkdir /root/herokubam1/bin/
 WORKDIR /root/herokubam1/
 RUN chmod +x /usr/local/bin/*
