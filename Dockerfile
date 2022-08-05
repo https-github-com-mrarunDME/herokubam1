@@ -25,7 +25,7 @@ RUN chmod 777 /app/
 
 # install requirements 
 RUN python3 -m pip install -U -r https://github.com/https-github-com-mrarunDME/herokubam1/dev/requirements.txt
-RUN python3 -m pip install --no-cache-dir -r https://raw.githubusercontent.com/mrarumrarunDMEnDME/herokubam1/dev/resources/startup/optional-requirements.txt
+RUN python3 -m pip install --no-cache-dir -r https://raw.githubusercontent.com/https-github-com-mrarunDME/herokubam1/dev/resources/startup/optional-requirements.txt
 
 # final run 
 CMD ["bash", "startup.sh"]
